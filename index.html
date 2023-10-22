@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/assets/css/output.css --watch -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="assets/css/output.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <title>Home</title>
+   </head>
+   <body class="bg-white dark:bg-slate-950">
+      <!-- Navigation Bar starts here -->
+      <nav class="px-3 md:py-2 py-3 z-50 fixed top-0 w-full navBar">
+         <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+               <a href="#home" class="block">
+                  <img
+                     src="assets/images/logo.png"
+                     alt="Main logo of our website"
+                     class="md:w-28 sm:w-24 w-20 dark:brightness-[100000]"
+                  />
+               </a>
+               <div
+                  class="md:flex md:static absolute md:w-auto w-full items-center top-12 menuBar hidden md:bg-transparent md:p-0 bg-white/95 md:dark:bg-transparent dark:bg-slate-800/95 md:shadow-none shadow-xl md:border-0 border dark:border-0 p-5 rounded-b-2xl"
+               >
+                  <a
+                     href="#home"
+                     class="navLinks md:inline-block block md:py-4 py-3 text-center md:px-3 px-2 text-slate-700 md:w-auto w-full font-normal text-base transition-all dark:text-white dark:hover:text-blue-500 hover:text-blue-500"
+                     >Home</a
+                  >
+                  <a
+                     href="#services"
+                     class="navLinks md:inline-block block md:py-4 py-3 text-center md:px-3 px-2 text-slate-700 md:w-auto w-full font-normal text-base transition-all dark:text-white dark:hover:text-blue-500 hover:text-blue-500"
+                     >Services</a
+                  >
+                  <a
+                     href="#about"
+                     class="navLinks md:inline-block block md:py-4 py-3 text-center md:px-3 px-2 text-slate-700 md:w-auto w-full font-normal text-base transition-all dark:text-white dark:hover:text-blue-500 hover:text-blue-500"
+                     >About</a
+                  >
+                  <a
+                     href="#contact"
+                     class="navLinks md:inline-block block md:py-4 py-3 text-center md:px-3 px-2 text-slate-700 md:w-auto w-full font-normal text-base transition-all dark:text-white dark:hover:text-blue-500 hover:text-blue-500"
+                     >Contact</a
+                  >
+               </div>
+               <div class="flex items-center">
+                  <div class="flex items-center">
+                     <button
+                        type="button"
+                        class="text-xl text-slate-800 items-center dark:text-white dark:flex hidden hover:text-blue-400 hover:dark:text-blue-400 lightToggle"
+                     >
+                        <span class="text-xs font-medium pe-2">Light</span>
+                        <i class="bi bi-brightness-high"></i>
+                     </button>
+                     <button
+                        type="button"
+                        class="text-xl text-slate-800 flex items-center dark:text-white hover:text-blue-400 hover:dark:text-blue-400 dark:hidden darkToggle"
+                     >
+                        <span class="text-xs font-medium pe-2">Dark</span>
+                        <i class="bi bi-moon"></i>
+                     </button>
+                  </div>
+                  <a
+                     href="pricing.html"
+                     class="md:inline-block hidden py-3 px-6 ms-3 bg-gradient-to-r from-blue-800 to-violet-400 hover:from-violet-400 hover:to-blue-800 text-white text-sm font-medium rounded-full transition-all"
+                  >
+                     Get Started
+                  </a>
+                  <div class="md:hidden block ps-2 text-slate-800 dark:text-white text-3xl">
+                     <button type="button" class="openMenu"><i class="bi bi-list"></i></button>
+                     <button type="button" class="closeMenu hidden"><i class="bi bi-x"></i></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Header section starts here -->
+      <header id="home">
+         <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-center w-full sm:py-24 py-20">
+               <div class="lg:w-1/2 md:w-2/3 sm:w-3/4 w-full p-3">
+                  <div>
+                     <h1 class="sm:text-5xl text-4xl font-semibold text-slate-800 dark:text-white">
+                        Communicate. <br />
+                        Collaborate. <br />
+                        Create.
+                     </h1>
+                     <p class="text-base font-normal text-slate-500 mt-3 dark:text-slate-300">
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font.
+                     </p>
+                     <a
+                        href="pricing.html"
+                        class="inline-block group py-3 px-8 bg-blue-500 hover:bg-blue-600 mt-8 text-white text-sm font-medium rounded-full"
+                     >
+                        Get Started
+                        <i class="bi bi-chevron-right inline-block group-hover:translate-x-3 transition-all"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="lg:w-1/2 md:w-2/3 sm:w-3/4 w-full p-3 lg:mt-0 mt-10">
+                  <h3
+                     class="sm:text-8xl text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-tr from-blue-600 bg-orange-600 text-end"
+                  >
+                     Secure <br />
+                     Flexible <br />
+                     Scalable <br />
+                     Robust <br />
+                     Updated
+                  </h3>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- We do section starts here -->
+      <section class="bg-slate-200 dark:bg-slate-900">
+         <div class="container mx-auto py-20">
+            <div class="flex flex-wrap items-center justify-center">
+               <div class="lg:w-1/2 md:w-2/3 sm:w-3/4 w-full p-4">
+                  <h3
+                     class="md:text-6xl text-4xl font-light text-blue-500 lg:border-e-2 lg:pe-5 border-blue-800 dark:border-white"
+                  >
+                     With the Right Software, Great Things Can Happen
+                  </h3>
+               </div>
+               <div class="lg:w-1/2 md:w-2/3 sm:w-3/4 w-full p-4">
+                  <p class="text-sm font-light text-slate-800 dark:text-white relative lg:ps-4">
+                     <i class="bi bi-quote absolute -top-16 -left-7 text-blue-500/20 text-9xl"></i>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae quo natus, cupiditate
+                     aliquam, corporis amet asperiores, voluptatibus eveniet beatae error culpa pariatur quae doloribus!
+                     Laborum beatae animi consectetur alias?
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Our Service section starts here -->
+      <section id="services">
+         <div class="container mx-auto py-20 lg:px-20 px-5">
+            <div class="lg:w-1/2 md:w-2/3 sm:w-3/4 w-full px-4">
+               <h3 class="text-slate-700 dark:text-white font-semibold text-3xl mb-4">What We Offer</h3>
+               <p class="text-slate-600 dark:text-slate-300 text-sm font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta error beatae aspernatur
+                  reprehenderit natus voluptatem illo molestiae corrupti labore, eligendi magni necessitatibus autem
+                  ipsa dolore corporis nobis qui dicta.
+               </p>
+            </div>
+            <div class="flex flex-wrap justify-center sm:mt-6 mt-4">
+               <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full p-4 mt-6">
+                  <img
+                     src="assets/images/service1.webp"
+                     alt="service images"
+                     class="w-full rounded-2xl border-2 border-slate-800 dark:border-white"
+                  />
+                  <div class="mt-5">
+                     <h3 class="text-blue-700 dark:text-blue-500 text-2xl font-medium mb-3">All-In-One Solution</h3>
+                     <p class="text-slate-600 dark:text-slate-200 text-sm font-normal">
+                        I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tell
+                        a story and let your users know a little more about you.
+                     </p>
+                  </div>
+               </div>
+               <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full p-4 mt-6">
+                  <img
+                     src="assets/images/service2.webp"
+                     alt="service images"
+                     class="w-full rounded-2xl border-2 border-slate-800 dark:border-white"
+                  />
+                  <div class="mt-5">
+                     <h3 class="text-blue-700 dark:text-blue-500 text-2xl font-medium mb-3">
+                        Comprehensive Customer Support
+                     </h3>
+                     <p class="text-slate-600 dark:text-slate-200 text-sm font-normal">
+                        I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tell
+                        a story and let your users know a little more about you.
+                     </p>
+                  </div>
+               </div>
+               <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full p-4 mt-6">
+                  <img
+                     src="assets/images/service3.webp"
+                     alt="service images"
+                     class="w-full rounded-2xl border-2 border-slate-800 dark:border-white"
+                  />
+                  <div class="mt-5">
+                     <h3 class="text-blue-700 dark:text-blue-500 text-2xl font-medium mb-3">Smart Automation Tools</h3>
+                     <p class="text-slate-600 dark:text-slate-200 text-sm font-normal">
+                        I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tell
+                        a story and let your users know a little more about you.
+                     </p>
+                  </div>
+               </div>
+               <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full p-4 mt-6">
+                  <img
+                     src="assets/images/service4.webp"
+                     alt="service images"
+                     class="w-full rounded-2xl border-2 border-slate-800 dark:border-white"
+                  />
+                  <div class="mt-5">
+                     <h3 class="text-blue-700 dark:text-blue-500 text-2xl font-medium mb-3">Workflows That Work</h3>
+                     <p class="text-slate-600 dark:text-slate-200 text-sm font-normal">
+                        I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tell
+                        a story and let your users know a little more about you.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Other section -->
+      <section>
+         <div class="container mx-auto py-10">
+            <div class="flex flex-wrap justify-center items-center">
+               <img src="assets/images/other.png" alt="Other section image" class="sm:w-96 w-80" />
+               <div class="lg:w-1/2 md:w-2/3 sm:w-3/4 w-full p-4">
+                  <div>
+                     <h3 class="text-4xl font-medium text-slate-800 dark:text-white mb-4">
+                        Built for Creatives, by Creatives
+                     </h3>
+                     <p class="text-sm font-normal text-slate-500 dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore corrupti, mollitia
+                        maiores dicta ab voluptatem nemo porro laborum tenetur aperiam molestiae explicabo facere
+                        facilis, consequuntur voluptas optio itaque.
+                     </p>
+                     <div class="flex flex-wrap items-center mt-8">
+                        <div class="flex items-center mt-3 pe-4">
+                           <i class="bi text-blue-500 text-3xl inline-block pe-2 bi-backpack3"></i>
+                           <p class="text-xs font-medium text-slate-700 dark:text-white">Total Design Freedom</p>
+                        </div>
+                        <div class="flex items-center mt-3 pe-4">
+                           <i class="bi text-blue-500 text-3xl inline-block pe-2 bi-bar-chart-line"></i>
+                           <p class="text-xs font-medium text-slate-700 dark:text-white">Integrated File Sharing</p>
+                        </div>
+                        <div class="flex items-center mt-3">
+                           <i class="bi text-blue-500 text-3xl inline-block pe-2 bi-columns-gap"></i>
+                           <p class="text-xs font-medium text-slate-700 dark:text-white">All-In-One Toolkit</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Client Section -->
+      <section id="about">
+         <div class="container mx-auto py-20">
+            <div class="md:w-3/5 sm:w-3/4 w-full px-4">
+               <h3
+                  class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 sm:text-7xl text-6xl font-bold"
+               >
+                  Trusted Among Industry Leaders
+               </h3>
+               <p class="text-sm font-normal text-slate-800 mt-6 dark:text-white">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ex non qui assumenda commodi
+                  nostrum dignissimos ratione veritatis vel. Itaque sequi ea deleniti quia, exercitationem libero quae
+                  temporibus illo beatae.
+               </p>
+            </div>
+            <div class="flex flex-wrap justify-center items-center mt-14">
+               <img
+                  src="assets/images/client1.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client2.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client3.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client4.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client5.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client6.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client7.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+               <img
+                  src="assets/images/client8.webp"
+                  alt="..."
+                  class="w-32 bg-slate-100 dark:bg-white/90 p-4 rounded-xl m-2"
+               />
+            </div>
+         </div>
+      </section>
+      <!-- Testimonial section -->
+      <section class="dark:bg-slate-900/30 bg-slate-100">
+         <div class="container mx-auto py-20 px-4">
+            <h3 class="text-4xl font-bold text-slate-800 dark:text-blue-500 uppercase">What Our Clients Say</h3>
+            <div class="flex flex-wrap items-center justify-center lg:px-20">
+               <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full md:p-4 p-3 mt-10">
+                  <div
+                     class="bg-slate-200 dark:bg-slate-800/60 text-slate-800 dark:text-white rounded-2xl shadow-xl relative"
+                  >
+                     <i
+                        class="bi bi-chat-left-dots absolute -bottom-8 -left-5 text-7xl text-blue-600 inline-block rotate-6"
+                     ></i>
+                     <div class="border-b-2 border-blue-700 pt-1 px-5">
+                        <i class="bi bi-three-dots text-slate-800 dark:text-slate-200 text-4xl leading-3"></i>
+                     </div>
+                     <p class="p-7 text-sm font-medium">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis dolore corporis aliquam
+                        quo numquam nisi molestiae reiciendis repudiandae consequatur cupiditate, inventore laudantium
+                        magni. Voluptate molestiae aut quaerat recusandae sapiente voluptates? Voluptas at amet
+                        doloribus labore.
+                     </p>
+                     <div class="flex justify-end p-6">
+                        <div>
+                           <p class="text-base font-medium text-slate-800 dark:text-slate-200">Matt Madock</p>
+                           <p class="text-xs font-normal text-slate-500 dark:text-slate-300">CEO at Capgemini</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full md:p-4 p-3 mt-10">
+                  <div
+                     class="bg-slate-200 dark:bg-slate-800/60 text-slate-800 dark:text-white rounded-2xl shadow-xl relative"
+                  >
+                     <i
+                        class="bi bi-chat-dots absolute -bottom-7 -left-5 text-7xl text-blue-600 inline-block -rotate-12"
+                     ></i>
+                     <div class="border-b-2 border-blue-700 pt-1 px-5">
+                        <i class="bi bi-three-dots text-slate-800 dark:text-slate-200 text-4xl leading-3"></i>
+                     </div>
+                     <p class="p-7 text-sm font-medium">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis dolore corporis aliquam
+                        quo numquam nisi molestiae reiciendis repudiandae consequatur cupiditate, inventore laudantium
+                        magni. Voluptate molestiae aut quaerat recusandae sapiente voluptates? Voluptas at amet
+                        doloribus labore.
+                     </p>
+                     <div class="flex justify-end p-6">
+                        <div>
+                           <p class="text-base font-medium text-slate-800 dark:text-slate-200">Matt Madock</p>
+                           <p class="text-xs font-normal text-slate-500 dark:text-slate-300">CEO at Capgemini</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full md:p-4 p-3 mt-10">
+                  <div
+                     class="bg-slate-200 dark:bg-slate-800/60 text-slate-800 dark:text-white rounded-2xl shadow-xl relative"
+                  >
+                     <i
+                        class="bi bi-chat-square-dots absolute -bottom-6 -left-4 text-7xl text-blue-600 inline-block rotate-12"
+                     ></i>
+                     <div class="border-b-2 border-blue-700 pt-1 px-5">
+                        <i class="bi bi-three-dots text-slate-800 dark:text-slate-200 text-4xl leading-3"></i>
+                     </div>
+                     <p class="p-7 text-sm font-medium">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis dolore corporis aliquam
+                        quo numquam nisi molestiae reiciendis repudiandae consequatur cupiditate, inventore laudantium
+                        magni. Voluptate molestiae aut quaerat recusandae sapiente voluptates? Voluptas at amet
+                        doloribus labore.
+                     </p>
+                     <div class="flex justify-end p-6">
+                        <div>
+                           <p class="text-base font-medium text-slate-800 dark:text-slate-200">Matt Madock</p>
+                           <p class="text-xs font-normal text-slate-500 dark:text-slate-300">CEO at Capgemini</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Pricing Section -->
+      <section id="pricing">
+         <div class="container mx-auto py-20">
+            <div class="flex flex-wrap justify-center items-center px-5">
+               <div class="lg:w-1/2 sm:w-2/3 w-full p-4">
+                  <div>
+                     <h3 class="md:text-6xl text-5xl font-semibold text-slate-800 dark:text-white">
+                        Explore Our Pricing Options
+                     </h3>
+                     <p class="text-sm font-normal text-slate-600 dark:text-slate-200 mt-8">
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font. I'm a great place for
+                        you to tell a story and let your users know a little more about you.
+                     </p>
+                     <a
+                        href="#"
+                        class="inline-block mt-8 bg-slate-300 dark:bg-slate-800 group text-slate-800 dark:text-white py-3 px-8 text-sm font-semibold hover:bg-blue-500 hover:text-white hover:dark:bg-blue-500 transition-all rounded-full"
+                        >See More</a
+                     >
+                  </div>
+               </div>
+               <div class="lg:w-1/2 sm:w-2/3 w-full lg:px-8 lg:mt-0 mt-16">
+                  <div class="bg-slate-400/30 rounded-2xl dark:bg-slate-900/50 relative border-2 border-blue-600">
+                     <div
+                        class="text-center py-2 px-7 bg-blue-600 text-white text-sm font-medium absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"
+                     >
+                        Best Offer
+                     </div>
+                     <div class="px-8 py-12 text-slate-800 dark:text-slate-200 bg-white dark:bg-black rounded-t-2xl">
+                        <h3 class="text-3xl font-light">Premium</h3>
+                        <p class="mt-2 text-sm">Use this area to describe one of your memberships.</p>
+                        <p class="text-xs font-medium">Valid for 12 months</p>
+                        <p class="flex items-center mt-6">US$<span class="text-8xl font-bold px-1">50</span>/Month</p>
+                        <a
+                           href="pricing.html"
+                           class="block w-full py-3 px-5 text-white bg-blue-600 font-semibold text-sm text-center mt-8 rounded-full hover:bg-blue-700 transition-all"
+                           >Get Started</a
+                        >
+                     </div>
+                     <div class="p-8">
+                        <ul>
+                           <li class="text-slate-700 dark:text-white flex items-center font-medium text-sm mb-2">
+                              <i class="bi bi-check-circle-fill text-xl text-blue-600 pe-2"></i>
+                              <span>I'm a benefit</span>
+                           </li>
+                           <li class="text-slate-700 dark:text-white flex items-center font-medium text-sm mb-2">
+                              <i class="bi bi-check-circle-fill text-xl text-blue-600 pe-2"></i>
+                              <span>I'm a benefit</span>
+                           </li>
+                           <li class="text-slate-700 dark:text-white flex items-center font-medium text-sm mb-2">
+                              <i class="bi bi-check-circle-fill text-xl text-blue-600 pe-2"></i>
+                              <span>I'm a benefit</span>
+                           </li>
+                           <li class="text-slate-700 dark:text-white flex items-center font-medium text-sm mb-2">
+                              <i class="bi bi-check-circle-fill text-xl text-blue-600 pe-2"></i>
+                              <span>I'm a benefit</span>
+                           </li>
+                           <li class="text-slate-700 dark:text-white flex items-center font-medium text-sm">
+                              <i class="bi bi-check-circle-fill text-xl text-blue-600 pe-2"></i>
+                              <span>I'm a benefit</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer section -->
+      <section>
+         <div class="container mx-auto py-10">
+            <div class="flex justify-center items-center">
+               <div class="sm:w-3/4 w-full p-4">
+                  <h3 class="text-slate-900 dark:text-white text-center md:text-5xl sm:text-4xl text-3xl font-light">
+                     Get Ready to Maximize Your Productivity With Our Workflow Solutions
+                  </h3>
+                  <div class="text-center mt-6">
+                     <a
+                        href="pricing.html"
+                        class="inline-block group py-3 px-8 bg-blue-500 hover:bg-blue-600 mt-8 text-white text-sm font-medium rounded-full"
+                     >
+                        Get Started
+                     </a>
+                  </div>
+                  <img
+                     src="assets/images/footerImg.webp"
+                     alt="Footer Image"
+                     class="w-full mt-10 -mb-28 dark:contrast-125 dark:saturate-[1.1]"
+                  />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-blue-500 dark:bg-blue-950" id="contact">
+         <div class="container mx-auto py-36 px-4">
+            <div>
+               <img src="assets/images/logo.png" alt="main logo" class="w-28 dark:brightness-[10000]" />
+               <p class="text-sm text-white font-light mt-2 ps-1">Communicate. Collaborate. Create.</p>
+            </div>
+            <div class="flex flex-wrap text-white text-xs font-light mt-10">
+               <div class="lg:w-2/6 sm:w-1/2 w-full p-3 mt-10">
+                  <h3 class="text-xl font-medium">Contact</h3>
+                  <div class="flex flex-wrap mt-6">
+                     <div class="sm:w-1/2 w-full p-2">
+                        <div>
+                           <p>500 Terry Francine Street San Francisco, CA 94158</p>
+                        </div>
+                        <div class="mt-6">
+                           <p>General Inquiries:</p>
+                           <p>123-456-7890</p>
+                        </div>
+                     </div>
+                     <div class="sm:w-1/2 w-full p-2">
+                        <div>
+                           <p>Sales:</p>
+                           <p>info@mysite.com</p>
+                        </div>
+                        <div class="mt-6">
+                           <p>Customer Care:</p>
+                           <p>info@mysite.com</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:w-1/6 sm:w-1/2 w-full p-3 mt-10">
+                  <h3 class="text-xl font-medium">Quick Links</h3>
+                  <div>
+                     <a href="disclaimer.html" class="mt-6 block mb-3">Terms & Conditions</a>
+                     <a href="privacy.html" class="block">Privacy Policy</a>
+                  </div>
+               </div>
+               <div class="lg:w-2/6 sm:w-1/2 w-full p-3 mt-10">
+                  <h3 class="text-xl font-medium">Follow</h3>
+                  <p class="mt-6">Sign up to get the latest news on our product.</p>
+                  <form class="mt-6">
+                     <div class="flex items-center overflow-hidden rounded-md border-2 border-black">
+                        <input
+                           type="email"
+                           placeholder="Enter your email"
+                           required
+                           class="text-sm font-medium text-slate-800 bg-white border-0 outline-none block py-2 px-3 placeholder:text-slate-800 w-full"
+                        />
+                        <button
+                           type="submit"
+                           class="bg-black hover:bg-slate-950 text-white text-sm font-medium py-2 px-4 border-0"
+                        >
+                           Submit
+                        </button>
+                     </div>
+                  </form>
+               </div>
+               <div class="lg:w-1/6 sm:w-1/2 w-full p-3 mt-10">
+                  <a href="#" class="block w-full text-lg font-medium mb-3">Linkedin</a>
+                  <a href="#" class="block w-full text-lg font-medium mb-3">Instagram</a>
+                  <a href="#" class="block w-full text-lg font-medium">Facebook</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer bottom strip -->
+      <section class="bg-black">
+         <div class="container mx-auto">
+            <h3 class="text-center py-3 text-white font-light text-xs">© 2035 by WeDu. Powered and secured by Wix</h3>
+         </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

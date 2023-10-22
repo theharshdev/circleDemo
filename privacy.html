@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/assets/css/output.css --watch -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="assets/css/output.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <title>Home</title>
+   </head>
+   <body class="bg-white dark:bg-slate-950">
+      <!-- Navigation Bar starts here -->
+      <nav class="py-4 px-3 z-50 fixed top-0 w-full navBar">
+         <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+               <a href="index.html" class="block">
+                  <img
+                     src="assets/images/logo.png"
+                     alt="Main logo of our website"
+                     class="md:w-28 sm:w-24 w-20 dark:brightness-[100000]"
+                  />
+               </a>
+               <div class="flex items-center">
+                  <div class="flex items-center">
+                     <button
+                        type="button"
+                        class="text-xl text-slate-800 items-center dark:text-white dark:flex hidden hover:text-blue-400 hover:dark:text-blue-400 lightToggle"
+                     >
+                        <span class="text-xs font-medium pe-2">Light</span>
+                        <i class="bi bi-brightness-high"></i>
+                     </button>
+                     <button
+                        type="button"
+                        class="text-xl text-slate-800 flex items-center dark:text-white hover:text-blue-400 hover:dark:text-blue-400 dark:hidden darkToggle"
+                     >
+                        <span class="text-xs font-medium pe-2">Dark</span>
+                        <i class="bi bi-moon"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Header -->
+      <header class="bg-slate-200 dark:bg-slate-900/60">
+         <div class="container mx-auto py-36">
+            <div class="flex">
+               <div class="lg:w-3/5 sm:w-2/3 w-full px-4">
+                  <h1 class="md:text-5xl text-4xl font-semibold text-slate-800 dark:text-white leading-tight">
+                     Privacy Policy
+                  </h1>
+                  <div class="mt-2">
+                     <a href="index.html" class="text-blue-600 text-sm font-normal">Back to Home Page</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Disclaimer -->
+      <section class="-mt-24">
+         <div class="container mx-auto">
+            <div class="flex">
+               <div class="lg:w-3/5 sm:w-2/3 w-full px-4">
+                  <div class="p-8 rounded-2xl bg-slate-100/60 shadow-xl dark:bg-slate-800/40">
+                     <p class="text-sm text-slate-700 dark:text-slate-200 font-normal">
+                        Terms and conditions (“Terms”) are a set of legal terms defined by the owner of a website. They
+                        set forth the terms and conditions governing the activities of the website visitors on the said
+                        website and the relationship between the site visitors and the website owner. Terms must be
+                        defined according to the specific needs and nature of each website. For example, a website
+                        offering products to customers in e-commerce transactions requires Terms that are different from
+                        the Terms of a website only providing information. Terms provide the website owner the ability
+                        to protect themselves from potential legal exposure.
+                     </p>
+                     <h3 class="mt-8 text-slate-800 text-2xl dark:text-white font-medium">
+                        In general, what should you cover in your Terms & Conditions?
+                     </h3>
+                     <p class="text-sm text-slate-700 dark:text-slate-200 font-normal mt-5">
+                        In general, what should you cover in your Terms & Conditions?
+                     </p>
+                     <ul class="mt-8 text-sm text-slate-700 dark:text-slate-200 font-normal list-decimal ps-7">
+                        <li>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur magni ut,
+                           exercitationem fuga a reiciendis al libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur magni ut,
+                           exercitationem fuga a reiciendis aliquid veniam, eveniet deserunt minima voluptatum sapiente,
+                           teneVoluptates, libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetd veniam,
+                           eveniet deserunt minima voluptatum sapiente, tenetur aut accusamus facilis. Voluptates,
+                           libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur magni ut,
+                           exercitationem fuga a reiciendis aliquidapiente, tenetur aut accusamus facilis. Voluptates,
+                           libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, dolor sit amet coliquid veniam, eveniet deserunt minima voluptatum sapiente,
+                           tenetur aut accusamus facilis. Voluptates, libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, tetur magni ut, exercitationem fuga a reiciendis aliquid veniam, eveniet
+                           deserunt minima voluptatum sapiente, tenetur aut accusamus facilis. Voluptates, libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam consectetur magni ut,
+                           exercitationem fuga a reiciendis tenetur aut accusamus facilis. Voluptates, libero eos.
+                        </li>
+                        <li>
+                           Lorem ipsum, dolor sit amet. Quibusdam consectetur magni ut, exercitationem fuga a reiciendis
+                           aliquid veniam, eveniet deserunt minima voluptatum sapiente, tenetur aut accusamus facilis.
+                           Voluptates, libero eos.
+                        </li>
+                     </ul>
+                     <p class="text-sm text-slate-700 dark:text-white font-semibold mt-10">
+                        The explanations and information provided herein are only general explanations, information and
+                        samples. You should not rely on this article as legal advice or as recommendations regarding
+                        what you should actually do. We recommend that you seek legal advice to help you understand and
+                        to assist you in the creation of your privacy policy.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer section -->
+      <section>
+         <div class="container mx-auto pb-10">
+            <div class="flex justify-center items-center">
+               <div class="sm:w-3/4 w-full p-4">
+                  <img
+                     src="assets/images/footerImg.webp"
+                     alt="Footer Image"
+                     class="w-full mt-10 -mb-28 dark:contrast-125 dark:saturate-[1.1]"
+                  />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-blue-500 dark:bg-blue-950" id="contact">
+         <div class="container mx-auto py-36 px-4">
+            <div>
+               <img src="assets/images/logo.png" alt="main logo" class="w-28 dark:brightness-[10000]" />
+               <p class="text-sm text-white font-light mt-2 ps-1">Communicate. Collaborate. Create.</p>
+            </div>
+            <div class="flex flex-wrap text-white text-xs font-light mt-10">
+               <div class="lg:w-2/6 sm:w-1/2 w-full p-3 mt-10">
+                  <h3 class="text-xl font-medium">Contact</h3>
+                  <div class="flex flex-wrap mt-6">
+                     <div class="sm:w-1/2 w-full p-2">
+                        <div>
+                           <p>500 Terry Francine Street San Francisco, CA 94158</p>
+                        </div>
+                        <div class="mt-6">
+                           <p>General Inquiries:</p>
+                           <p>123-456-7890</p>
+                        </div>
+                     </div>
+                     <div class="sm:w-1/2 w-full p-2">
+                        <div>
+                           <p>Sales:</p>
+                           <p>info@mysite.com</p>
+                        </div>
+                        <div class="mt-6">
+                           <p>Customer Care:</p>
+                           <p>info@mysite.com</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:w-1/6 sm:w-1/2 w-full p-3 mt-10">
+                  <h3 class="text-xl font-medium">Quick Links</h3>
+                  <div>
+                     <a href="disclaimer.html" class="mt-6 block mb-3">Terms & Conditions</a>
+                     <a href="privacy.html" class="block">Privacy Policy</a>
+                  </div>
+               </div>
+               <div class="lg:w-2/6 sm:w-1/2 w-full p-3 mt-10">
+                  <h3 class="text-xl font-medium">Follow</h3>
+                  <p class="mt-6">Sign up to get the latest news on our product.</p>
+                  <form class="mt-6">
+                     <div class="flex items-center overflow-hidden rounded-md border-2 border-black">
+                        <input
+                           type="email"
+                           placeholder="Enter your email"
+                           required
+                           class="text-sm font-medium text-slate-800 bg-white border-0 outline-none block py-2 px-3 placeholder:text-slate-800 w-full"
+                        />
+                        <button
+                           type="submit"
+                           class="bg-black hover:bg-slate-950 text-white text-sm font-medium py-2 px-4 border-0"
+                        >
+                           Submit
+                        </button>
+                     </div>
+                  </form>
+               </div>
+               <div class="lg:w-1/6 sm:w-1/2 w-full p-3 mt-10">
+                  <a href="#" class="block w-full text-lg font-medium mb-3">Linkedin</a>
+                  <a href="#" class="block w-full text-lg font-medium mb-3">Instagram</a>
+                  <a href="#" class="block w-full text-lg font-medium">Facebook</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer bottom strip -->
+      <section class="bg-black">
+         <div class="container mx-auto">
+            <h3 class="text-center py-3 text-white font-light text-xs">© 2035 by WeDu. Powered and secured by Wix</h3>
+         </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
